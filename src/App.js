@@ -4,6 +4,26 @@ import ItemDate from  './components/ItemDate';
 
 function App() {
   const itemTwo="Nirma";
+  const response = [
+    {
+      itemName:"Nirma1",
+      itemDate: "20",
+      itemMonth: "June",
+      itemyear:"2001"
+    },
+    {
+      itemName:"Nirma2",
+      itemDate: "202",
+      itemMonth: "June2",
+      itemyear:"2002"
+    },
+    {
+      itemName:"Nirma3",
+      itemDate: "203",
+      itemMonth: "June3",
+      itemyear:"2003"
+    }
+  ];
   return (
     <div>
       <Item name="abc1"></Item>
@@ -12,8 +32,8 @@ function App() {
       <Item name={itemTwo}></Item>
       <ItemDate day="30" month="30" year="30"></ItemDate>
 
-      <Item name="abc3"></Item>
-      <ItemDate day="40" month="40" year="40"></ItemDate>
+      <Item name={response[2].itemName}></Item>
+      <ItemDate day={response[2].itemDate} month={response[2].itemMonth} year={response[2].itemyear}></ItemDate>
       <div>this is me here</div>
     </div>
   );
