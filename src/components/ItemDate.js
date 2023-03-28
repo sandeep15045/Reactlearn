@@ -3,8 +3,8 @@ import './ItemDate.css';
 function ItemDate(props) {
 
     const day=props.day;
-    const month=10;
-    const year=10;
+    const month=props.month;
+    const year=props.year;
 
 
 

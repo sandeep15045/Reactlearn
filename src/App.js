@@ -3,12 +3,13 @@ import Item from './components/Item';
 import ItemDate from  './components/ItemDate';
 
 function App() {
+  const itemTwo="Nirma";
   return (
     <div>
       <Item name="abc1"></Item>
       <ItemDate day="20" month="20" year="20"></ItemDate>
 
-      <Item name="abc2"></Item>
+      <Item name={itemTwo}></Item>
       <ItemDate day="30" month="30" year="30"></ItemDate>
 
       <Item name="abc3"></Item>
